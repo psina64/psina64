@@ -14,10 +14,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Example
+      - name: Half-year calendar
         uses: lowlighter/metrics@latest
         with:
-          template: terminal
-          filename: metrics.terminal.svg
+          filename: metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, metadata
+          base: ""
+          plugin_isocalendar: yes
+
